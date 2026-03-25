@@ -184,6 +184,112 @@ Français
 
 </div>
 
+  <!-- EXTRA COURSES SECTION -->
+<style>
+.extra-courses {
+   padding: 100px 20px;
+   text-align: center;
+   background: linear-gradient(135deg, #141e30, #243b55);
+   color: white;
+}
+
+.extra-courses h2 {
+   font-size: 38px;
+   margin-bottom: 10px;
+}
+
+.extra-courses p {
+   font-size: 18px;
+   margin-bottom: 55px;
+   opacity: 0.9;
+}
+
+.course-buttons {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+}
+
+.course-btn {
+   padding: 20px 38px;
+   font-size: 18px;
+   font-weight: bold;
+   color: white;
+   text-decoration: none;
+   border-radius: 18px;
+   transition: all 0.35s ease;
+   position: relative;
+   overflow: hidden;
+   box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* Animated gradient border effect */
+.course-btn::before {
+   content: "";
+   position: absolute;
+   inset: -2px;
+   border-radius: 18px;
+   background: linear-gradient(45deg, red, orange, yellow, lime, cyan, blue, violet);
+   z-index: -1;
+   animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+   0% { filter: hue-rotate(0deg); }
+   100% { filter: hue-rotate(360deg); }
+}
+
+.course-btn span {
+   position: relative;
+   z-index: 2;
+}
+
+/* Inner background for contrast */
+.course-btn::after {
+   content: "";
+   position: absolute;
+   inset: 2px;
+   background: rgba(0,0,0,0.75);
+   border-radius: 16px;
+   z-index: 1;
+}
+
+.course-btn:hover {
+   transform: translateY(-8px) scale(1.1);
+   box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+/* Specific color accents */
+.btn-growth { color: #ff9a00; }
+.btn-health { color: #00ffcc; }
+.btn-spanish { color: #ffd700; }
+.btn-api { color: #66aaff; }
+</style>
+
+<div class="extra-courses">
+   <h2>Other Highly Interesting Courses You Should Definitely Explore</h2>
+   <p>Boost your personal growth, health, and skills with these powerful and carefully crafted programs.</p>
+
+   <div class="course-buttons">
+      <a class="course-btn btn-growth" href="https://valueinvestingsoftware.github.io/GrowthInHeight/" target="_blank">
+         <span>Growth in Height Program</span>
+      </a>
+
+      <a class="course-btn btn-health" href="https://valueinvestingsoftware.github.io/Psoriasis/" target="_blank">
+         <span>Psoriasis Natural Treatment Guide</span>
+      </a>
+
+      <a class="course-btn btn-spanish" href="https://valueinvestingsoftware.github.io/Spanish/" target="_blank">
+         <span>Learn Spanish Step by Step</span>
+      </a>
+
+      <a class="course-btn btn-api" href="https://valueinvestingsoftware.github.io/BuildAnApiRest/" target="_blank">
+         <span>Build a REST API from Scratch</span>
+      </a>
+   </div>
+</div>
+  
 <div class="footer">
 Educational course about eye health, visual habits, and natural techniques that support healthier vision.
 </div>
